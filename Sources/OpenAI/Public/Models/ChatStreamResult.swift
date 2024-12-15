@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ChatStreamResult: Codable, Equatable {
+public struct ChatStreamResult: Codable, Equatable, Sendable {
     
     public struct Choice: Codable, Equatable {
         public typealias FinishReason = ChatResult.Choice.FinishReason
